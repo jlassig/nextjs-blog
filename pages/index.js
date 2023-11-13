@@ -22,7 +22,7 @@ export default function Home({allPostsData}) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi everyone! I'm Julia and I'm an aspiring web and software developer.{" "}
+          Hi everyone! I'm Julia and I'm an aspiring web and software developer. I love them both so much. How do you choose just one? {" "}
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
