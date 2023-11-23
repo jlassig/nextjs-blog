@@ -1,13 +1,18 @@
 import Head from "next/head"
 import Image from "next/image"
-import styles from "./layout.module.css"
+import styles from './layout.module.css'
 import utilStyles from "../styles/utils.module.css"
 import Link from "next/link"
+import React, {Component} from 'react';
 
 const name = "Julia Lassig"
 export const siteTitle = "Next.js Sample Website"
+interface Homeprops{
+  children?:React.ReactNode;
+  home? : any;
+}
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }:Homeprops) {
   return (
     <div className={styles.container}>
       <Head>

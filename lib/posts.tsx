@@ -3,6 +3,7 @@ import path from "path"
 import matter from "gray-matter"
 import { remark } from "remark"
 import html from "remark-html"
+import date from '../components/date'
 
 const postsDirectory = path.join(process.cwd(), "posts")
 
@@ -27,7 +28,7 @@ export function getSortedPostsData() {
     }
   })
   // Sort posts by date
-  return allPostsData.sort((a, b) => {
+  return allPostsData.sort((a: any, b:any) => {
     if (a.date < b.date) {
       return 1
     } else {
